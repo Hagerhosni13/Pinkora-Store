@@ -1,0 +1,141 @@
+
+.product-card {
+  background: #fffafa;
+  border: 1px solid #ffe0e9;
+  border-radius: 18px;
+  overflow: hidden;
+  transition: 0.3s ease;
+  box-shadow: 0 4px 15px rgba(73, 52, 61, 0.06);
+}
+
+.product-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 22px rgba(73, 52, 61, 0.12);
+}
+
+.product-image {
+  position: relative;
+  height: 230px;
+  overflow: hidden;
+  background: #fff0f3;
+}
+
+.product-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.favorite-btn {
+  position: absolute;
+  top: 12px;
+  right: 12px;
+  width: 38px;
+  height: 38px;
+  border: none;
+  border-radius: 50%;
+  background: white;
+  color: #e95d87;
+  font-size: 18px;
+  cursor: pointer;
+}
+
+.favorite-btn.active {
+  background: #e95d87;
+  color: white;
+}
+
+.sale-badge {
+  position: absolute;
+  top: 12px;
+  left: 12px;
+  background: #e95d87;
+  color: white;
+  padding: 6px 12px;
+  border-radius: 15px;
+  font-size: 11px;
+  font-weight: bold;
+}
+
+.product-info {
+  padding: 16px;
+}
+
+.product-category {
+  color: #e95d87;
+  font-size: 12px;
+  text-transform: uppercase;
+  margin-bottom: 7px;
+}
+
+.product-info h3 {
+  color: #481b2b;
+  font-size: 16px;
+  margin: 0 0 9px;
+}
+
+.product-rating {
+  font-size: 13px;
+  margin-bottom: 10px;
+}
+
+.product-price {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.product-price strong {
+  color: #e95d87;
+}
+
+.product-price del {
+  color: #999;
+  font-size: 13px;
+}
+
+.product-card-actions {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-top: 15px;
+}
+
+.add-cart-btn {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 9px;
+  padding: 12px;
+  border: none;
+  border-radius: 25px;
+  background: #e95d87;
+  color: white;
+  font-family: inherit;
+  font-size: 13px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.add-cart-btn:hover {
+  background: #c94370;
+}
+
+.product-details-btn {
+  display: block;
+  text-align: center;
+  text-decoration: none;
+  color: #e95d87;
+  border: 1px solid #e95d87;
+  border-radius: 25px;
+  padding: 10px;
+  font-size: 13px;
+  transition: 0.3s;
+}
+
+.product-details-btn:hover {
+  background: #fff0f3;
+}

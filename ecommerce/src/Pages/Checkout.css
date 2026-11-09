@@ -1,0 +1,148 @@
+
+.checkout-page {
+  min-height: 70vh;
+  padding: 55px 5%;
+  background: #fffafa;
+}
+
+.checkout-container {
+  max-width: 1100px;
+  margin: auto;
+}
+
+.checkout-container > h1 {
+  text-align: center;
+  color: #481b2b;
+  font-size: 32px;
+}
+
+.checkout-subtitle {
+  text-align: center;
+  color: #888;
+  margin-bottom: 35px;
+}
+
+.checkout-layout {
+  display: grid;
+  grid-template-columns: 1.5fr 1fr;
+  gap: 30px;
+  align-items: start;
+}
+
+.checkout-form,
+.checkout-summary {
+  background: white;
+  border: 1px solid #ffe0e9;
+  border-radius: 18px;
+  padding: 25px;
+}
+
+.checkout-form h2,
+.checkout-summary h2 {
+  color: #481b2b;
+  margin-bottom: 20px;
+}
+
+.checkout-form label {
+  display: block;
+  color: #49343d;
+  margin: 14px 0 7px;
+  font-size: 14px;
+}
+
+.checkout-form input,
+.checkout-form select {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ffe0e9;
+  border-radius: 9px;
+  outline: none;
+  background: #fffafa;
+  font-family: inherit;
+  box-sizing: border-box;
+}
+
+.checkout-form input:focus,
+.checkout-form select:focus {
+  border-color: #e95d87;
+}
+
+.checkout-form h2:not(:first-child) {
+  margin-top: 28px;
+}
+
+.place-order-btn {
+  width: 100%;
+  margin-top: 25px;
+  padding: 14px;
+  border: none;
+  border-radius: 25px;
+  background: #e95d87;
+  color: white;
+  font-size: 15px;
+  cursor: pointer;
+}
+
+.place-order-btn:hover {
+  background: #c94370;
+}
+
+.checkout-item {
+  display: flex;
+  justify-content: space-between;
+  gap: 12px;
+  padding: 14px 0;
+  border-bottom: 1px solid #ffe0e9;
+  color: #666;
+  font-size: 13px;
+}
+
+.checkout-item strong {
+  color: #481b2b;
+  white-space: nowrap;
+}
+
+.checkout-total {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 22px;
+  padding-top: 15px;
+  border-top: 1px solid #ffe0e9;
+  color: #e95d87;
+  font-size: 18px;
+}
+
+.order-success {
+  max-width: 550px;
+  margin: 50px auto;
+  padding: 50px 20px;
+  text-align: center;
+  background: white;
+  border: 1px solid #ffe0e9;
+  border-radius: 18px;
+}
+
+.order-success h1,
+.order-success h2 {
+  color: #481b2b;
+}
+
+.order-success p {
+  color: #888;
+}
+
+.order-success a {
+  display: inline-block;
+  margin-top: 15px;
+  padding: 12px 25px;
+  background: #e95d87;
+  color: white;
+  text-decoration: none;
+  border-radius: 25px;
+}
+
+@media (max-width: 768px) {
+  .checkout-layout {
+    grid-template-columns: 1fr;
+  }
+}
